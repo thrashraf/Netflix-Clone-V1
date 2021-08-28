@@ -85,7 +85,7 @@ topAllTime();
 
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 20,
+    spaceBetween: 40,
     direction: "horizontal",
     
     mousewheel: {
