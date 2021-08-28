@@ -1,0 +1,398 @@
+@import '_variable';
+@import '_global';
+
+
+body {
+
+    header {
+        
+        height: 150vw;
+        background-image: url('/Images/strangers_things_poster.jpg');
+        background-repeat: no-repeat;
+        background-size:100%;
+
+        .header-container {
+
+            .header-mobile {
+                
+                margin: 0px 30px;
+                display: flex;
+                justify-content: space-between;
+    
+                .logo {
+    
+                    img {
+                        padding-top: 15px;
+                        width: 35px;
+                    }
+                }
+    
+                h4 {
+                    font-size: 15px;
+                    font-weight: 400;
+                    
+                }
+            }
+
+           
+        }
+
+        .header-detail {
+            margin: 140vw 50px 0 50px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: 0; 
+                font-size: 10px;  
+            }
+
+            .my-List {
+                text-align: center;
+                .fa-plus {
+
+                    margin-bottom: 10px;
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+
+            }
+
+            .play {
+                height: 40px;
+                display: inline-flex;
+                background-color: white;
+                color: black;
+                padding: 5px 20px 10px 20px;
+                border-radius: 5px;
+
+                p {
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+                .fa-play {
+
+                    font-size: 20px;
+                    margin: 5px 10px 0 0;
+                }
+            }
+
+            .info {
+                text-align: center;
+
+                .fa-info-circle {
+
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+
+        .header-desktop {
+
+            display: none;
+            justify-content: space-between;
+            background-color: black;
+            width: 100%;
+            padding: 20px 30px;
+            position: fixed;
+            z-index: 9999;
+
+
+
+            h4 {
+                font-size: 1vw;
+                font-weight: 500;
+                margin: 5px 20px 0 0;
+            }
+
+            .logo {
+
+                margin-right: 20px;
+
+                img {
+                    
+                    width: 5vw;
+                }
+            }
+
+            img {
+
+                width: 30px;
+                height: 30px;
+            }
+
+            .fas {
+
+                margin-right: 20px;
+                margin-top: 7px;
+            }
+
+            .left {
+
+                display: flex;
+            }
+
+            .right {
+
+            display: flex;
+            }
+        }
+
+        .about-movie {
+
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            display: none;
+
+            h1 {
+
+                font-size: 50px;
+            }
+
+            .component {
+
+                display: flex;
+
+                .play {
+                    height: 40px;
+                    display: inline-flex;
+                    margin-right: 20px;
+                    background-color: white;
+                    color: black;
+                    padding: 5px 20px 10px 20px;
+                    border-radius: 5px;
+    
+                    p {
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-top: 5px;
+                    }
+                    .fa-play {
+    
+                        font-size: 20px;
+                        margin: 5px 10px 0 0;
+                    }
+                }
+    
+                .info {
+                    text-align: center;
+                    height: 40px;
+                    display: inline-flex;
+                    background-color: darkgray;
+                    color: #fff;
+                    padding: 5px 20px 10px 20px;
+                    border-radius: 5px;
+                    
+                    p {
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-top: 5px;
+                    }
+    
+                    .fa-info-circle {
+    
+                        font-size: 20px;
+                        margin: 5px 10px 0 0;
+                    }
+                }
+
+            }
+        }
+    }
+
+    section {
+        margin-bottom: 100px;
+
+        .menu-bottom {
+
+            position: fixed;
+            bottom: 0.1px;
+            width: 100%;
+            scroll-margin-top: 5rem;
+            padding: 5px 30px;
+            background-color: black;
+            z-index: 9999;
+            
+
+            .modal {
+
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                overflow: auto;
+
+                
+
+                .fas {
+ 
+                    font-size: 15px;
+                    font-weight: 300;
+                  
+                }
+    
+                p {
+
+
+                    font-size: 10px;
+                    margin-top: 5px;
+                }
+            }
+
+            
+        }
+    }
+
+    article {
+            margin-left: 8px;
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: black;
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+    
+          .swiper-slide img {
+
+            display: block;
+            height: 50vw;
+            object-fit: cover;
+          }
+
+          .backdrop img {
+
+            height: 20vw;
+
+          }
+
+    
+    }
+
+
+    #last {
+
+        height: 300px;
+    }
+
+    
+}
+
+
+
+
+@media all and (min-width: 1020px) {
+    
+    body {
+
+        header {
+
+            background-image: url('https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXq_vQJf0hxGmUQqHnb8nXwpz8iEmzC2upISv1MYxfE2kXO-IouDyL-TuAAkSqEn-iPui5s3ax8In2XqquIQkQ7L7csL.jpg?r=a42');
+            background-size: 100%;
+            height: 650px;
+
+            .header-container {
+
+                .header-mobile {
+
+                    display: none;
+                }
+            }
+
+
+            .header-detail {
+
+                display: none;
+            }
+
+            
+
+            .header-desktop {
+
+                display: flex;
+
+                h4 {
+                    margin-top: 2.5%;
+                    font-size: 1.5vw;
+                }
+
+                .right {
+
+                    margin-top: 1%;
+                }
+
+                .fas {
+                    margin-top: 5%;
+                    font-size: 1.5vw;
+                }
+
+                .logo {
+
+                    img {
+
+                        width: 10vw;
+                        height:5vw;
+                    }
+                }
+
+                img {
+
+                    margin-top: 1%;
+                }
+
+                
+            }
+
+            .about-movie {
+
+                display: block;
+            }
+            
+        }
+
+        section {
+
+
+            display: none;
+        }
+
+        article {
+
+            .swiper-slide img {
+
+                height: 30vw;
+
+            }
+
+            .swiper-slide { 
+
+                flex-shrink: 100;
+            }
+
+            .backdrop img {
+
+                height: 15vw;
+
+            }
+        }
+
+        
+    }
+}
