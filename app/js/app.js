@@ -39,7 +39,7 @@ const getTop = async() => {
 
   for (const movie of data.results) {
     topWrapper.innerHTML += `
-  <div class="swiper-slide" id="backdrop"><img src="https://image.tmdb.org/t/p/w500/${movie.backdrop_path}" alt=""></div>
+  <div class="swiper-slide" id="backdrop"><img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt=""></div>
   `;
 
   topContainer.append(topWrapper);
@@ -54,7 +54,7 @@ const getUpcoming = async() => {
 
   for (const movie of data.results) {
     upComingWrapper.innerHTML += `
-  <div class="swiper-slide"><img src="https://image.tmdb.org/t/p/w500/${movie.backdrop_path}" alt=""></div>
+  <div class="swiper-slide"><img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt=""></div>
   `;
 
   upComingContainer.append(upComingWrapper);
@@ -69,7 +69,7 @@ const topAllTime = async() => {
 
   for (const movie of data.results) {
     topAlltimeWrapper.innerHTML += `
-  <div class="swiper-slide"><img src="https://image.tmdb.org/t/p/w500/${movie.backdrop_path}" alt=""></div>
+  <div class="swiper-slide"><img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt=""></div>
   `;
 
   topAll.append(topAlltimeWrapper);
@@ -85,7 +85,7 @@ topAllTime();
 
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 60,
+    spaceBetween: 20,
     direction: "horizontal",
     
     mousewheel: {
